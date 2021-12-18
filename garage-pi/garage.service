@@ -1,0 +1,14 @@
+[Unit]
+Description=Garage Door Monitor
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/pi/app.py
+StandardInput=tty-force
+Restart=always
+RestartSec=30
+ExecStartPre=/bin/sleep 30
+
+[Install]
+WantedBy=multi-user.target
