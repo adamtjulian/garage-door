@@ -15,3 +15,5 @@ SCL to 5
 The garage-pi uses reed sensor to determine if garage is open/closed, and outputs the status to a .json file that can be consumed by other services. The service file runs in the background to continuously update the garage file.
 
 Using reed sensor, connect to board using ground and pin 9 (ground) and 15 (GPIO 22).
+
+All .service files go in /etc/systemd/system
