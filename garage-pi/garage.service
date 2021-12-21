@@ -5,10 +5,10 @@ After=multi-user.target
 [Service]
 Type=simple
 ExecStart=/usr/bin/python3 /home/pi/app.py
-StandardInput=tty-force
+#StandardInput=tty-force
 Restart=always
-RestartSec=30
-ExecStartPre=/bin/sleep 30
+#ExecStartPre=/bin/sleep 5
+RestartSec=5
 
 [Install]
 WantedBy=multi-user.target
